@@ -28,6 +28,6 @@
 
 {{$Productos->links()}}
 
-<button type="button" name="button"><a href="/agregarproducto">agregar Producto</a></button>
+<button type="button" name="button"><a href="/agregarproducto">agregar Productos</a></button>
   </body>
 </html>
