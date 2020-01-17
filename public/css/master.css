@@ -1,8 +1,20 @@
+
+
+
+
 .logo{
     border-radius: 20px;
   }
+
+  * {
+  padding:0px;
+  margin:0px auto ;
+  z-index: 100px;
+}
   body{
-    background-image: url('/images/fondo.jpg');
+    background-image: url('/images/fondo-new.jpg');
+
+/*background-color:#4F80FD;*/
   }
   header{
     height: 5%;
@@ -17,14 +29,21 @@
     width: 40%;
 
   }
+  .tituloproducto{
+    color: red;
+  }
   .gamers{
     margin-left: 180px;
   }
   .circulo{
-    background-color: white;
+    background-color:#418cff;
     padding: 25px;
     border-radius: 400px;
     width: 250px;
+  }
+  .buscar{
+    position: absolute;
+    left: 390px;
   }
   i{
     font-size: 8rem;

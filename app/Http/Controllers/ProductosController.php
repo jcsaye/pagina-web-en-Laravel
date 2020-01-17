@@ -9,13 +9,23 @@ use App\Producto;
 class ProductosController extends Controller
 {
   public function Listado(){
-  $Productos=Producto::paginate(10);
+
+  $Productos=Producto::paginate(6);
 
 
   $vac = compact('Productos');
   return view ("ListadoProductos", $vac);
 
 }
+
+  public function detalle($id){
+
+    $producto=Producto::find($id); 
+
+    $vac= compact('producto');
+    return  view ('detalleProducto',$vac);
+    
+  }
 
 
 
@@ -24,8 +34,8 @@ class ProductosController extends Controller
 
 
   $reglas=  [
-    "nombre"=> "string|min:3|max:15|unique:productos,nombre",
-    "descripcion"=> "string|max:100",
+    "nombre"=> "string|min:3|max:100|unique:productos,nombre",
+    "descripcion"=> "string|max:255",
     // "categoria"=>"string",
     "stock"=>"integer|min:1",
     "precio"=>"numeric|min:1",

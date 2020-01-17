@@ -12,10 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
+
+//usuarios
+
+route::get('/users', 'UsersController@listado');
+  
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -25,3 +31,5 @@ Route::get('/agregarproducto', function () {
     return view('agregarproducto');
 });
 Route::post('/agregarproducto', 'ProductosController@agregar');
+
+Route::get('/detalleProducto/{id}','ProductosController@detalle');

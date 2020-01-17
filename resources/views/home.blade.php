@@ -44,7 +44,7 @@
   </div>
 </section>
 
-<section class="productos">
+<section class="productos bg-danger">
   <div class="muestra container-fluid mt-3">
   <div class="row d-flex justify-content-center">
       <div class="col-sm-12 col-md-6 col-lg-4 p-3">
@@ -82,7 +82,7 @@
 </section>
 
 <section class="gamers">
-  <div class="row  p-1">
+  <div class="row justify-content-center  ">
     <div class="servicio d-flex justify-content-center col-sm-12 col-lg-5">
       <img class=" img-fluid" src="/images/gamers.jpg" alt="game">
     </div>
@@ -96,7 +96,7 @@
 <section class="Servicios">
   <div class="muestra container-fluid mt-5">
   <div class="row d-flex justify-content-center m-3">
-      <div class=" text-center col-sm-12 col-md-6 col-lg-3">
+      <div class=" text-center col-lg-3">
         <div class="circulo m-3">
           <i class="fas fa-desktop"></i>
           <h2 class="mt-1">SOPORTE TECNICO</h2>
@@ -106,7 +106,7 @@
           </p>
         </div>
       </div>
-      <div class=" text-center col-sm-12 col-md-6 col-lg-3">
+      <div class=" text-center col-lg-3">
         <div class="circulo m-3">
           <i class="fas fa-edit"></i>
           <h2 class="mt-1">DISEÑO WEB</h2>
@@ -116,7 +116,7 @@
           </p>
         </div>
       </div>
-      <div class=" text-center col-sm-12 col-md-6 col-lg-3">
+      <div class=" text-center col-lg-3">
         <div class="circulo m-3">
           <i class="fab fa-windows"></i>
           <h2 class="mt-1">SOFTWARE LEGAL</h2>
@@ -126,7 +126,7 @@
           </p>
         </div>
       </div>
-      <div class=" text-center col-sm-12 col-md-6 col-lg-3">
+      <div class=" text-center col-lg-3">
         <div class="circulo m-3">
           <i class="fas fa-network-wired"></i>
           <h2 class="mt-1">HOSTING SERVER</h2>
@@ -139,32 +139,6 @@
     </div>
     </div>
   </section>
-  <footer class="p-2">
-    <div class="row">
-      <nav class="col-sm-6">
-        <ul class="text-white">
-          <li><a class="text-white" href="#">Inicio</a></li>
-          <li><a class="text-white" href="#">Información</a></li>
-          <li><a class="text-white" href="#">Comentarios</a></li>
-          <li><a class="text-white" href="#">Staff</a></li>
-          <li><a class="text-white" href="#">Usuario</a></li>
-        </ul>
-      </nav>
-      <nav class="col-sm-6">
-        <ul>
-          <a href=""><i class="redes far fa-envelope"></i></a>
-          <a href=""><i class="redes fab fa-facebook-square"></i></a>
-          <a href=""><i class="redes fab fa-twitter"></i></a>
-          <a href=""><i class="redes fab fa-youtube"></i></a>
-          <a href=""><i class="redes fab fa-instagram"></i></a>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-12">
-      <p class="text-light text-right">Copyright (c) 2019 Create by JDG COMPUTER.</p>
-    </div>
-
-
-  </footer>
+  
 
 @endsection

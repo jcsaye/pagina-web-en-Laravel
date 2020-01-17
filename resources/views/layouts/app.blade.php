@@ -26,8 +26,8 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light shadow-sm">
-            <div class="container">
-            <a href="index.php"> <img class="img-fluid m-1 p-2" src="images/logo.png" alt="" style="border-radius:30px; width:150px;"></a>
+            <div class="container bg-danger align-content-xl-between">
+            <a href="index.php"> <img class="img-fluid m-1 p-2" src="images/logo.png" alt="" style="border-radius:30px; width:150px;position: relative;right: -24px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,9 +39,9 @@
 
                     <button type="button" name="button" class="btnRegistro btn-lg btn-warning p-1 m-1"><a href="registro.php" class="btn-lg btn-warning p-1 m-2">Registrarse</a></button>
 
-                    <button type="button" name="button" class="btnOferta btn-lg btn-light p-1 m-1"><a href="" class=" btn-lg btn-light p-1 m-2">Ofertas</a></button>
+                    <button type="button" name="button" class="btnOferta btn-lg btn-light p-1 m-1"><a href="" class=" btn-lg btn-light p-1 m-2">ofertas</a></button>
 
-                    <button class="btnProducto btn-lg btn-success p-1 m-2"type="button" name="button"><a href="" class="btn-lg btn-success p-1 m-2" >Productos</a></button>
+                    <button class="btnProducto btn-lg btn-success p-1 m-2"type="button" name="button"><a href="/productos" class="btn-lg btn-success p-1 m-2" >Productos</a></button>
 
                     <button class="btnServicio btn-lg btn-dark p-1 m-2"type="button" name="button"><a href="" class="btn-lg btn-dark p-1 m-2">Servicios</a></button>
 
@@ -92,9 +92,42 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+        
     </div>
+
+    
+    <div class="container-fluid">
+            @yield('content')
+    </div>
+    
+
+
+      <footer class="p-2" >
+    <div class="row">
+      <nav class="col-sm-6">
+        <ul class="text-white">
+          <li><a class="text-white" href="#">Inicio</a></li>
+          <li><a class="text-white" href="#">Información</a></li>
+          <li><a class="text-white" href="#">Comentarios</a></li>
+          <li><a class="text-white" href="#">Staff</a></li>
+          <li><a class="text-white" href="#">Usuario</a></li>
+        </ul>
+      </nav>
+      <nav class="col-sm-6">
+        <ul>
+          <a href=""><i class="redes far fa-envelope"></i></a>
+          <a href=""><i class="redes fab fa-facebook-square"></i></a>
+          <a href=""><i class="redes fab fa-twitter"></i></a>
+          <a href=""><i class="redes fab fa-youtube"></i></a>
+          <a href=""><i class="redes fab fa-instagram"></i></a>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-12">
+      <p class="text-light text-right">Copyright (c) 2019 Create by JDG COMPUTER.</p>
+    </div>
+
+
+  </footer>
 </body>
 </html>
